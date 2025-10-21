@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hype Vibes Restaurant</title>
+        <style>
+            * {
+                margin: 2px;
+                padding: 1px;
+            }
+            body {
+                font-family: serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img
+                id="header-img"
+                width="200"
+                src="https://i.pinimg.com/736x/2e/cf/16/2ecf16f7912b97136673e13dd546e9ec.jpg"
+                alt="Hype Vibes Restaurant Logo"
+            />
+            <h1>Hype Vibes Restaurant</h1>
+            <nav>
+                <a href="#menu">Menu</a> |
+                <a href="#order-form">Order Form</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2 id="menu">Menu</h2>
+                <article>
+                    <h3>Caramel Pudding</h3>
+                    <figure>
+                        <img
+                            width="200"
+                            src="https://i.pinimg.com/736x/4b/18/e7/4b18e7edeef6774084a56fd42315f3fa.jpg"
+                            alt="Caramel Pudding"
+                        />
+                    </figure>
+                    <p>Description: Caramel pudding is a soft and sweet dessert made from a mixture of milk, eggs, and sugar with a layer of caramel on top. Its smooth texture and distinctive caramel flavor make it a favorite among many people.</p>
+                    <p><i>Price: $5.00</i></p>            
+                </article>
+                <article>
+                    <h3>Tteokbokki</h3>
+                    <figure>
+                        <img
+                            width="200"
+                            src="https://i.pinimg.com/736x/50/71/92/507192459668b9dea36d929c5d289630.jpg"
+                            alt="Tteokbokki"
+                        />
+                    </figure>
+                    <p>Description: Tteokbokki is a popular Korean street food made from chewy rice cakes cooked in a spicy and slightly sweet red chili sauce. It is often served with fish cakes, boiled eggs, and scallions, making it a flavorful and comforting snack.</p>
+                    <p><i>Price: $7.00</i></p>
+                </article>
+            </section>
+            <section>
+                <h2>Place Your Order</h2>
+                <form id="order-form">
+                    <label for="CaramelPudding">Caramel Pudding:</label>
+                    <input type="number" id="CaramelPudding" name="CaramelPudding" min="0" value="0">
+                    <br>
+                    Add-ons<br>
+                    <input type="radio" id="IceCream" name="PuddingAddOn" value="Ice Cream">
+                    <label for="IceCream">Ice Cream</label>
+                    <input type="radio" id="ExtraCaramel" name="PuddingAddOn" value="Extra Caramel">
+                    <label for="ExtraCaramel">Extra Caramel</label>
+                    <input type="radio" id="ExtraWhippedCream" name="PuddingAddOn" value="Extra Whipped Cream">
+                    <label for="ExtraWhippedCream">Extra Whipped Cream</label>
+                    <input type="radio" id="Extracherry" name="PuddingAddOn" value="Extra Cherry">
+                    <label for="Extracherry">Extra Cherry</label>
+                    <br><br>
+                    <label for="Tteokbokki">Tteokbokki:</label>
+                    <input type="number" id="Tteokbokki" name="Tteokbokki" min="0" value="0">
+                    <br>
+                    Add-ons<br>
+                    <input type="radio" id="ExtraCheese" name="TteokbokkiAddOn" value="ExtraCheese">
+                    <label for="ExtraCheese">Extra Cheese</label>
+                    <input type="radio" id="Morespicy" name="TteokbokkiAddOn" value="More Spicy">
+                    <label for="Morespicy">More Spicy</label>
+                    <br><br>
+                    <label for="AnyNotes">Notes:</label><br>
+                    <textarea id="AnyNotes" name="AnyNotes" rows="7" cols="42"  placeholder="ex: spicy level, more cutlery, etc."></textarea>
+                    <br><br>
+                    <input type="submit" value="Go To Checkout">
+                </form>
+            </section>
+        </main>
+        <footer>
+        <p>Made with love by @beibiee</p>
+        </footer>
+    </body>
+</html>
